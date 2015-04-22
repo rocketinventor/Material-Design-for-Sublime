@@ -3,19 +3,19 @@ Hi there,
 Here are some simple instructions to get you going.
 Copy and paste one of the following bits to your user preferences file.
 
-Blue Monday:
+Material Blue:
 {
-  "theme": "Spacefunk (Blue Monday).sublime-theme"
+  "theme": "materialfunk (Material Blue).sublime-theme"
 }
 
-Grey Tuesday:
+Material Grey:
 {
-  "theme": "Spacefunk (Grey Tuesday).sublime-theme"
+  "theme": "materialfunk (Material Grey).sublime-theme"
 }
 
 Include an additional line for a light sidebar if you fancy:
 {
-  "spacefunk_sidebar_light": true
+  "materialfunk_sidebar_light": true
 }
 
 Restart Sublime Text to make sure all changes are applied.
