@@ -2,9 +2,7 @@
 
 Material Space is a minimalistic theme for Sublime Text, based off of Google's material design specifications. It's code is forked from ST-Spacefunk theme, which is based off of [kkga's](https://github.com/kkga/spacegray) Spacegray theme.
 
-## Install
-
-### Via Package Control
+## Install via Package Control
 
 Material Space is not yet ready for production.
 When it is ready, you will be able to search for `Theme - Material Design` in [Sublime Package Control](https://sublime.wbond.net).
