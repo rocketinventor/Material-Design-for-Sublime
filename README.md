@@ -19,7 +19,7 @@ If you prefer a lighter version of the sidebar you can add the following line to
 
 ```
 {
-  "spacefunk_sidebar_light": true
+  "material_sidebar_light": true
 }
 ```
 Restart Sublime Text to make sure all changes are applied. Enjoy!
