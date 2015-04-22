@@ -6,7 +6,7 @@
     {
         "class": "tabset_control",
         "content_margin": [0,0,0,1],
-        "layer0.tint": [29,30,31],
+        "layer0.tint": [28,33,38],
         "layer0.opacity": 1,
         "tab_overlap": -1,
         "tab_width": 180,
@@ -30,7 +30,7 @@
         "class": "tab_control",
         "settings": ["show_tab_close_buttons"],
         "content_margin": [10,0,8,0],
-        "layer0.tint": [41,42,43],
+        "layer0.tint": [38,45,54],
         "layer0.opacity": 1
     },
     // Tab close state (!show_tab_close_buttons)
@@ -38,7 +38,7 @@
         "class": "tab_control",
         "settings": ["!show_tab_close_buttons"],
         "content_margin": [10,0,8,0],
-        "layer0.tint": [41,42,43],
+        "layer0.tint": [38,45,54],
         "layer0.opacity": 1
     },
     // Tab hover state
@@ -50,14 +50,14 @@
     {
         "class": "tab_control",
         "attributes": ["selected"],
-        "layer0.tint": [56,57,59]
+        "layer0.tint": [49,57,69]
     },
     // Tab active state (!show_tab_close_buttons)
     {
         "class": "tab_control",
         "settings": ["!show_tab_close_buttons"],
         "attributes": ["selected"],
-        "layer0.tint": [56,57,59]
+        "layer0.tint": [49,57,69]
     },
     // Tab dirty state (!show_tab_close_buttons)
     {
@@ -72,9 +72,9 @@
     // Tab close button
     {
         "class": "tab_close_button",
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/close.png",
+        "layer0.texture": "Theme - materialfunk/materialfunk/close.png",
         "layer0.opacity": 0,
-        "layer0.tint": [140,141,143]
+        "layer0.tint": [79,91,102]
     },
     {
         "class": "tab_close_button",
@@ -96,7 +96,7 @@
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control","attributes": ["dirty"]}],
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/circle.png",
+        "layer0.texture": "Theme - materialfunk/materialfunk/circle.png",
         "layer0.tint": [84,179,232],
         "layer0.opacity": 1
     },
@@ -110,7 +110,7 @@
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control","attributes": ["dirty","hover"]}],
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/close.png",
+        "layer0.texture": "Theme - materialfunk/materialfunk/close.png",
         "layer0.tint": [224,97,94],
         "layer0.opacity": 1
     },
@@ -148,21 +148,21 @@
     {
         "class": "tab_label",
         "fade": true,
-        "fg": [140,141,143],
+        "fg": [101,115,127],
         "shadow_offset": 0,
         "font.size": 11.5
     },
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control","attributes": ["hover"]}],
-        "fg": [200,203,207],
+        "fg": [192,197,206],
         "shadow_offset": 0
     },
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control","attributes": ["selected"]}],
-        "fg": [230,231,235],
-        "shadow_color": [41,41,41],
+        "fg": [223,225,232],
+        "shadow_color": [35,35,35],
         "shadow_offset": 1
     },
 //
@@ -170,7 +170,7 @@
 //
     {
         "class": "fold_button_control",
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/folder-closed.png",
+        "layer0.texture": "Theme - materialfunk/materialfunk/folder-closed.png",
         "layer0.opacity": 0.1,
         "layer0.inner_margin": 0,
         "content_margin": [8,8]
@@ -183,7 +183,7 @@
     {
         "class": "fold_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/folder-open.png"
+        "layer0.texture": "Theme - materialfunk/materialfunk/folder-open.png"
     },
     {
         "class": "fold_button_control",
@@ -195,7 +195,7 @@
     // Standard vertical scroll bar
     {
         "class": "scroll_bar_control",
-        "layer0.tint": [27,28,28],
+        "layer0.tint": [21,25,30],
         "layer0.opacity": 1,
         "blur": true
     },
@@ -203,21 +203,21 @@
     {
         "class": "scroll_bar_control",
         "attributes": ["horizontal"],
-        "layer0.tint": [27,28,28],
+        "layer0.tint": [28,33,38],
         "layer0.inner_margin": [0,5],
         "blur": true
     },
     // Standard scroll bar corner
     {
         "class": "scroll_corner_control",
-        "layer0.tint": [27,28,28],
-        "layer0.inner_margin": 5,
+        "layer0.tint": [28,33,38],
+        "layer0.inner_margin": [5],
         "layer0.opacity": 1
     },
     // Standard vertical scroll puck
     {
         "class": "puck_control",
-        "layer0.tint": [49,50,51],
+        "layer0.tint": [52,61,70],
         "layer0.opacity": 1,
         "layer0.inner_margin": 0,
         "content_margin": 5,
@@ -227,7 +227,7 @@
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
-        "layer0.tint": [49,50,51],
+        "layer0.tint": [52,61,70],
         "layer0.inner_margin": 0,
         "content_margin": 5,
         "blur": false
@@ -250,7 +250,7 @@
     {
         "class": "scroll_bar_control",
         "settings": ["overlay_scroll_bars"],
-        "layer0.tint": [27,28,28],
+        "layer0.tint": [52,61,70],
         "layer0.inner_margin": [0,10],
         "blur": false
     },
@@ -259,7 +259,7 @@
         "class": "scroll_bar_control",
         "settings": ["overlay_scroll_bars"],
         "attributes": ["horizontal"],
-        "layer0.tint": [27,28,28],
+        "layer0.tint": [52,61,70],
         "layer0.inner_margin": [5,0],
         "blur": true
     },
@@ -267,7 +267,6 @@
     {
         "class": "puck_control",
         "settings": ["overlay_scroll_bars"],
-        "layer0.tint": [49,50,51],
         "layer0.inner_margin": [0,5],
         "content_margin": [2,32],
         "blur": true
@@ -277,7 +276,7 @@
         "class": "puck_control",
         "settings": ["overlay_scroll_bars"],
         "attributes": ["horizontal"],
-        "layer0.tint": [49,50,51],
+        "layer0.tint": [49,57,69],
         "layer0.inner_margin": [5,0],
         "content_margin": [16,2],
         "blur": true
@@ -288,6 +287,7 @@
         "settings": ["overlay_scroll_bars"],
         "attributes": ["dark"],
         "layer0.tint": [28,33,38]
+
     },
     // Overlay light horizontal puck (for dark content)
     {
@@ -301,7 +301,7 @@
 //
     {
         "class": "sheet_container_control",
-        "layer0.tint": [33,33,33],
+        "layer0.tint": [33,38,46],
         "layer0.opacity": 1
     },
 //
@@ -309,7 +309,7 @@
 //
     {
         "class": "grid_layout_control",
-        "border_size": 1,
+        "border_size": 0,
         "border_color": [40,40,40]
     },
 //
@@ -325,7 +325,7 @@
     // General labels
     {
         "class": "label_control",
-        "color": [115,118,120]
+        "color": [79,91,102]
     },
     // Text field labels
     {
@@ -351,7 +351,7 @@
     // Tooltip container
     {
         "class": "tool_tip_control",
-        "layer0.tint": [76,77,78],
+        "layer0.tint": [79,91,103],
         "layer0.inner_margin": [1,1],
         "layer0.opacity": 1,
         "content_margin": 6
@@ -368,19 +368,19 @@
     {
         "class": "status_bar",
         "content_margin": 4,
-        "layer0.tint": [29,30,31],
+        "layer0.tint": [27,31,35],
         "layer0.opacity": 1
     },
     // Status bar button
     {
         "class": "status_button",
-        "min_size": [100,0]
+        "min_size": [100, 0]
     },
     // Status bar label
     {
         "class": "label_control",
         "parents": [{"class": "status_bar"}],
-        "color": [97,98,99]
+        "color": [79,91,102]
     },
 //
 // SIDEBAR
@@ -389,19 +389,19 @@
     {
         "class": "sidebar_container",
         "content_margin": [5,5,1,5],
-        "layer0.tint": [27,28,28],
+        "layer0.tint": [21,25,30],
         "layer0.opacity": 1
     },
     {
         "class": "sidebar_container",
-        "settings": ["spacefunk_sidebar_light"],
+        "settings": ["materialfunk_sidebar_light"],
         "layer0.tint": [222,222,222]
     },
     // Sidebar scrollbar
     {
         "class": "scroll_bar_control",
         "parents": [{"class": "sidebar_container"}],
-        "settings": ["spacefunk_sidebar_light"],
+        "settings": ["materialfunk_sidebar_light"],
         "layer0.tint": [222,222,222],
         "layer0.opacity": 1,
         "blur": true
@@ -410,7 +410,7 @@
     {
         "class": "puck_control",
         "parents": [{"class": "sidebar_container"}],
-        "settings": ["spacefunk_sidebar_light"],
+        "settings": ["materialfunk_sidebar_light"],
         "layer0.tint": [181,182,182],
         "layer0.opacity": 1,
         "layer0.inner_margin": 0,
@@ -421,7 +421,7 @@
     {
         "class": "scroll_corner_control",
         "parents": [{"class": "sidebar_container"}],
-        "settings": ["spacefunk_sidebar_light"],
+        "settings": ["materialfunk_sidebar_light"],
         "layer0.tint": [222,222,222]
     },
     // Sidebar tree
@@ -442,19 +442,19 @@
     {
         "class": "tree_row",
         "attributes": ["selected"],
-        "layer0.tint": [42,43,43],
+        "layer0.tint": [33,38,46],
         "layer0.opacity": 1
     },
     {
         "class": "tree_row",
-        "settings": ["spacefunk_sidebar_light"],
+        "settings": ["materialfunk_sidebar_light"],
         "attributes": ["selected"],
         "layer0.tint": [206,207,207]
     },
     // Sidebar heading
     {
         "class": "sidebar_heading",
-        "color": [140,141,143],
+        "color": [79,91,102],
         "shadow_color": [0,0,0],
         "shadow_offset": [0,1],
         "font.bold": true,
@@ -462,7 +462,7 @@
     },
     {
         "class": "sidebar_heading",
-        "settings": ["spacefunk_sidebar_light"],
+        "settings": ["materialfunk_sidebar_light"],
         "color": [84,84,84],
         "shadow_color": [235,235,235]
     },
@@ -475,13 +475,13 @@
     // Sidebar entry
     {
         "class": "sidebar_label",
-        "color": [125,126,128],
+        "color": [101,115,127],
         "shadow_offset": 0,
         "font.size": 12.5
     },
     {
         "class": "sidebar_label",
-        "settings": ["spacefunk_sidebar_light"],
+        "settings": ["materialfunk_sidebar_light"],
         "color": [89,89,89]
     },
     {
@@ -493,35 +493,35 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row","attributes": ["hover"]}],
-        "settings": ["spacefunk_sidebar_light"],
+        "settings": ["materialfunk_sidebar_light"],
         "color": [38,38,38]
     },
     // Sidebar folder entry
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row","attributes": ["expandable"]}],
-        "color": [140,141,143],
+        "color": [101,115,127],
         "shadow_color": [0,0,0],
         "shadow_offset": [0,1]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row","attributes": ["expandable"]}],
-        "settings": ["spacefunk_sidebar_light"],
+        "settings": ["materialfunk_sidebar_light"],
         "color": [84,84,84],
         "shadow_color": [235,235,235]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row","attributes": ["expandable","hover"]}],
-        "color": [202,204,207],
+        "color": [192,197,206],
         "shadow_color": [0,0,0],
         "shadow_offset": [0,1]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row","attributes": ["expandable","hover"]}],
-        "settings": ["spacefunk_sidebar_light"],
+        "settings": ["materialfunk_sidebar_light"],
         "color": [38,38,38],
         "shadow_color": [235,235,235]
     },
@@ -543,7 +543,7 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row","attributes": ["selected"]}],
-        "settings": ["spacefunk_sidebar_light"],
+        "settings": ["materialfunk_sidebar_light"],
         "color": [38,38,38],
         "shadow_color": [235,235,235]
     },
@@ -560,14 +560,14 @@
         "class": "close_button",
         "parents": [{"class": "tree_row","attributes": ["hover"]}],
         "layer0.opacity": 1,
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/close.png",
+        "layer0.texture": "Theme - materialfunk/materialfunk/close.png",
         "layer0.tint": [224,97,94]
     },
     // Sidebar file dirty
     {
         "class": "close_button",
         "attributes": ["dirty"],
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/circle.png",
+        "layer0.texture": "Theme - materialfunk/materialfunk/circle.png",
         "layer0.opacity": 1,
         "layer0.tint": [84,179,232]
     },
@@ -575,13 +575,13 @@
         "class": "close_button",
         "attributes": ["dirty"],
         "parents": [{"class": "tree_row","attributes": ["selected"]}],
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/close.png"
+        "layer0.texture": "Theme - materialfunk/materialfunk/close.png"
     },
     {
         "class": "close_button",
         "attributes": ["dirty"],
         "parents": [{"class": "tree_row","attributes": ["hover"]}],
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/close.png",
+        "layer0.texture": "Theme - materialfunk/materialfunk/close.png",
         "layer0.opacity": 1,
         "layer0.tint": [224,97,94]
     },
@@ -589,12 +589,12 @@
     {
         "class": "close_button",
         "attributes": ["hover"],
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/close.png"
+        "layer0.texture": "Theme - materialfunk/materialfunk/close.png"
     },
     {
         "class": "close_button",
         "parents": [{"class": "tree_row","attributes": ["hover","selected"]}],
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/close.png",
+        "layer0.texture": "Theme - materialfunk/materialfunk/close.png",
         "layer0.opacity": 1,
         "layer0.tint": [224,97,94]
     },
@@ -605,19 +605,19 @@
     {
         "class": "disclosure_button_control",
         "content_margin": [8,8],
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/folder-closed.png",
-        "layer0.tint": [125,126,128],
+        "layer0.texture": "Theme - materialfunk/materialfunk/folder-closed.png",
+        "layer0.tint": [79,91,102],
         "layer0.opacity": 1
     },
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row","attributes": ["hover"]}],
-        "layer0.tint": [202,204,207]
+        "layer0.tint": [167,173,186]
     },
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row","attributes": ["hover"]}],
-        "settings": ["spacefunk_sidebar_light"],
+        "settings": ["materialfunk_sidebar_light"],
         "layer0.tint": [38,38,38]
     },
     {
@@ -627,7 +627,7 @@
     // Sidebar folder closed
     {
         "class": "disclosure_button_control",
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/folder-closed.png"
+        "layer0.texture": "Theme - materialfunk/materialfunk/folder-closed.png"
     },
     {
         "class": "disclosure_button_control",
@@ -636,13 +636,13 @@
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row","attributes": ["selected"]}],
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/folder-closed.png"
+        "layer0.texture": "Theme - materialfunk/materialfunk/folder-closed.png"
     },
     // Sidebar group open
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/folder-open.png"
+        "layer0.texture": "Theme - materialfunk/materialfunk/folder-open.png"
     },
     {
         "class": "disclosure_button_control",
@@ -653,25 +653,25 @@
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row","attributes": ["selected"]}],
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/folder-open.png"
+        "layer0.texture": "Theme - materialfunk/materialfunk/folder-open.png"
     },
     // Sidebar folder open
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/folder-open.png"
+        "layer0.texture": "Theme - materialfunk/materialfunk/folder-open.png"
     },
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row","attributes": ["hover"]}],
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/folder-open.png"
+        "layer0.texture": "Theme - materialfunk/materialfunk/folder-open.png"
     },
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row","attributes": ["selected"]}],
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/folder-open.png"
+        "layer0.texture": "Theme - materialfunk/materialfunk/folder-open.png"
     },
 //
 // STANDARD TEXT BUTTONS
@@ -682,20 +682,20 @@
         "content_margin": [4,8,4,8],
         "min_size": [64,0],
         "layer0.opacity": 1,
-        "layer0.tint": [40,40,41],
+        "layer0.tint": [35,40,48],
         "layer0.inner_margin": [8,8]
     },
     // Hover button state
     {
         "class": "button_control",
         "attributes": ["hover"],
-        "layer0.tint": [52,53,54]
+        "layer0.tint": [42,47,56]
     },
     // Pressed button state
     {
         "class": "button_control",
         "attributes": ["pressed"],
-        "layer0.tint": [59,59,59]
+        "layer0.tint": [46,51,59]
     },
 //
 // TEXT INPUT FIELD
@@ -703,7 +703,7 @@
     // Text input field item
     {
         "class": "text_line_control",
-        "layer0.tint": [49,50,51],
+        "layer0.tint": [51,61,70],
         "layer0.opacity": 1,
         "content_margin": 3
     },
@@ -715,14 +715,14 @@
         "class": "panel_control",
         "layer0.inner_margin": [0,10],
         "layer0.opacity": 1,
-        "layer0.tint": [29,30,31],
+        "layer0.tint": [28,33,38],
         "content_margin": 0
     },
     // Quick panel background
     {
         "class": "overlay_control",
         "layer0.opacity": 1,
-        "layer1.tint": [29,30,31],
+        "layer1.tint": [28,33,38],
         "layer1.inner_margin": [0,0,10,0],
         "layer1.opacity": 1,
         "content_margin": 0
@@ -739,36 +739,36 @@
     },
     {
         "class": "quick_panel_row",
-        "layer0.tint": [53,53,54],
+        "layer0.tint": [51,61,70],
         "layer0.opacity": 1
     },
     {
         "class": "quick_panel_row",
         "attributes": ["hover"],
-        "layer0.tint": [61,61,61]
+        "layer0.tint": [60,71,81]
     },
     {
         "class": "quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [61,61,61]
+        "layer0.tint": [67,75,82]
     },
     {
         "class": "quick_panel_label",
-        "fg": [200,203,207],
+        "fg": [167,173,186,255],
         "match_fg": [255,255,255],
         "selected_fg": [255,255,255],
         "selected_match_fg": [255,255,255]
     },
     {
         "class": "quick_panel_path_label",
-        "fg": [140,141,143],
-        "match_fg": [140,141,143],
+        "fg": [101,115,126,255],
+        "match_fg": [137,145,155,255],
         "selected_fg": [255,255,255],
         "selected_match_fg": [255,255,255]
     },
     {
         "class": "quick_panel_score_label",
-        "fg": [140,141,143],
+        "fg": [101,115,126,255],
         "selected_fg": [255,255,255]
     },
 //
@@ -776,18 +776,18 @@
 //
     {
         "class": "mini_quick_panel_row",
-        "layer0.tint": [53,53,54],
+        "layer0.tint": [51,61,70],
         "layer0.opacity": 1
     },
     {
         "class": "mini_quick_panel_row",
         "attributes": ["hover"],
-        "layer0.tint": [61,61,61]
+        "layer0.tint": [60,71,81]
     },
     {
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [61,61,61]
+        "layer0.tint": [67,75,82]
     },
 //
 // CODE COMPLETION DROPDOWN
@@ -795,7 +795,7 @@
     {
         "class": "popup_control",
         "content_margin": 1,
-        "layer0.tint": [53,53,54],
+        "layer0.tint": [52,61,70],
         "layer0.opacity": 1
     },
     {
@@ -804,14 +804,14 @@
     },
     {
         "class": "auto_complete_label",
-        "fg": [200,203,207],
+        "fg": [167,173,186,255],
         "match_fg": [255,255,255],
-        "selected_fg": [200,203,207],
+        "selected_fg": [167,173,186,255],
         "selected_match_fg": [255,255,255]
     },
     {
         "class": "table_row",
-        "layer0.tint": [61,61,61],
+        "layer0.tint": [79,91,103],
         "layer0.opacity": 0,
         "layer0.inner_margin": 0
     },
@@ -827,7 +827,7 @@
     {
         "class": "icon_button_control",
         "layer1.opacity": 0,
-        "layer1.tint": [42,43,43],
+        "layer1.tint":[35,40,48],
         "content_margin": 7
     },
     {
@@ -873,8 +873,8 @@
     // Regex search button
     {
         "class": "icon_regex",
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/regex.png",
-        "layer0.tint": [115,118,120],
+        "layer0.texture": "Theme - materialfunk/materialfunk/regex.png",
+        "layer0.tint": [79,91,102],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -886,8 +886,8 @@
     // Case sensitive search button
     {
         "class": "icon_case",
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/casesens.png",
-        "layer0.tint": [115,118,120],
+        "layer0.texture": "Theme - materialfunk/materialfunk/casesens.png",
+        "layer0.tint": [79,91,102],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -899,8 +899,8 @@
     // Match whole word search button
     {
         "class": "icon_whole_word",
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/wholeword.png",
-        "layer0.tint": [115,118,120],
+        "layer0.texture": "Theme - materialfunk/materialfunk/wholeword.png",
+        "layer0.tint": [79,91,102],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -915,8 +915,8 @@
     // Show search context button
     {
         "class": "icon_context",
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/context.png",
-        "layer0.tint": [115,118,120],
+        "layer0.texture": "Theme - materialfunk/materialfunk/context.png",
+        "layer0.tint": [79,91,102],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -928,8 +928,8 @@
     // Use search buffer
     {
         "class": "icon_use_buffer",
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/buffer.png",
-        "layer0.tint": [115,118,120],
+        "layer0.texture": "Theme - materialfunk/materialfunk/buffer.png",
+        "layer0.tint": [79,91,102],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -944,8 +944,8 @@
     // Reverse search direction button (ST2 only)
     {
         "class": "icon_reverse",
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/reverse.png",
-        "layer0.tint": [115,118,120],
+        "layer0.texture": "Theme - materialfunk/materialfunk/reverse.png",
+        "layer0.tint": [79,91,102],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -957,8 +957,8 @@
     // Search wrap button
     {
         "class": "icon_wrap",
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/wrap.png",
-        "layer0.tint": [115,118,120],
+        "layer0.texture": "Theme - materialfunk/materialfunk/wrap.png",
+        "layer0.tint": [79,91,102],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -970,8 +970,8 @@
     // Search in selection button
     {
         "class": "icon_in_selection",
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/selection.png",
-        "layer0.tint": [115,118,120],
+        "layer0.texture": "Theme - materialfunk/materialfunk/selection.png",
+        "layer0.tint": [79,91,102],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -986,8 +986,8 @@
     // Preserve case button
     {
         "class": "icon_preserve_case",
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/casesens.png",
-        "layer0.tint": [115,118,120],
+        "layer0.texture": "Theme - materialfunk/materialfunk/casesens.png",
+        "layer0.tint": [79,91,102],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -1002,8 +1002,8 @@
     // Highlight results button
     {
         "class": "icon_highlight",
-        "layer0.texture": "Theme - Spacefunk/Spacefunk/highlight.png",
-        "layer0.tint": [115,118,120],
+        "layer0.texture": "Theme - materialfunk/materialfunk/highlight.png",
+        "layer0.tint": [79,91,102],
         "layer0.opacity": 1,
         "content_margin": 8
     },

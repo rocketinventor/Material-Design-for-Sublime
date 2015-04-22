@@ -1,6 +1,6 @@
-# Material Space
+# Materialfunk
 
-Material Space is a minimalistic theme for Sublime Text, based off of Google's material design specifications. It's code is forked from ST-Spacefunk theme, which is based off of [kkga's](https://github.com/kkga/spacegray) Spacegray theme.
+Materialfunk is a minimalistic theme for Sublime Text, based off of Google's material design specifications. It's code is forked from ST-Spacefunk theme, which is based off of [kkga's](https://github.com/kkga/spacegray) Spacegray theme.
 
 ## Install via Package Control
 
@@ -9,7 +9,7 @@ When it is ready, you will be able to search for `Theme - Material Design` in [S
 
 ## Setup
 
-Space Material will have several color choices. The hope is to have as many as 9-15/18 of the official colour preferences available so that nearly all of the easily distinguishable material design colors can be used. You will be able to activate the theme by editing your user preferences.
+Materialfunk will have several color choices. The hope is to have as many as 9-15/18 of the official colour preferences available so that nearly all of the easily distinguishable material design colors can be used. You will be able to activate the theme by editing your user preferences.
 Go to: `Preferences -> Settings - User`.
 
 ### Additional customization
